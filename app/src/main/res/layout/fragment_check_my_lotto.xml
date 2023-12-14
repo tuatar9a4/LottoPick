@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/tvWinnerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="80dp"
+            android:text="내 당첨 횟수"
+            />
+        <TextView
+            android:id="@+id/tvWinnerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tvWinnerTitle"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="0 원"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/tvWinnerText"
+            app:layout_constraintRight_toLeftOf="@+id/tvOneWinner"
+            android:layout_marginTop="10dp"
+            android:text="1등 "
+            />
+        <TextView
+            android:id="@+id/tvOneWinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/tvWinnerText"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="35dp"
+            android:text="0 번 "
+            />
+        <LinearLayout
+            android:id="@+id/llWinnerCountBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tvWinnerText"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/black"
+                android:text="2등 "
+                />
+            <TextView
+                android:id="@+id/tvTwoWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:text="0 번 "
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/black"
+                android:text="3등 "
+                />
+            <TextView
+                android:id="@+id/tvThreeWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:text="0번 "
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/black"
+                android:text="4등 "
+                />
+            <TextView
+                android:id="@+id/tvForthWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:text="0 번 "
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/black"
+                android:text="5등 "
+                />
+            <TextView
+                android:id="@+id/tvFifthWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:text="0 번 "
+                />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/llWinnerCountBox"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:overScrollMode="never"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/listContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

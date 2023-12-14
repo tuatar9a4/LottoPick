@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:width="40dp"
+        android:height="40dp">
+        <shape android:shape="oval"
+            >
+            <gradient
+                android:startColor="#fd9a3a"
+                android:centerColor="#f7e948"
+                android:endColor="#FFFFFF"
+                android:angle="135"
+                />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/main_btn_check"
+        android:width="20dp"
+        android:height="20dp"
+        android:gravity="center"
+        >
+        <shape >
+
+        </shape>
+    </item>
+
+</layer-list>

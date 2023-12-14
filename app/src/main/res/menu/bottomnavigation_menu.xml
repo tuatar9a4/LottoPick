@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/tabExpectPage"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:title="MAIN"
+        />
+    <item android:id="@+id/tabQRPage"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:title="QR"
+        />
+    <item android:id="@+id/tabMyPage"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:title="MY"
+        />
+    <item android:id="@+id/tabSettingPage"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:title="SETTING"
+        />
+</menu>

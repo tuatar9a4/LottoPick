@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/drawable/backgroud_main_btn.xml" value="0.1875" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/drawable/background_expect_list_item.xml" value="0.21041666666666667" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/drawable/background_expectlist_top.xml" value="0.21041666666666667" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/drawable/background_gradient.xml" value="0.2328125" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/drawable/background_main_my.xml" value="0.1875" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/drawable/background_main_qr.xml" value="0.1875" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/drawable/ball_background.xml" value="0.19" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/drawable/correct_num_round.xml" value="0.28229166666666666" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/drawable/round_background.xml" value="0.28703703703703703" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/layout/activity_qr_reader.xml" value="0.26979166666666665" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/layout/activity_splash.xml" value="0.33645833333333336" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/layout/expect_titlelist_item.xml" value="0.5" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/layout/fragment_check_my_lotto.xml" value="0.18" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/layout/fragment_home.xml" value="0.3578125" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/layout/fragment_main.xml" value="0.5" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/layout/fragment_qr_code.xml" value="0.26979166666666665" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/layout/iamge_link_text.xml" value="0.35260416666666666" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/layout/image_link_text.xml" value="0.1" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/layout/item_checkpage_expectnum.xml" value="0.67" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/layout/item_expect_lotto.xml" value="0.25" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/layout/item_lottoball.xml" value="1.25" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/layout/picknum_layout.xml" value="0.4220055710306407" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/menu/bottomnavigation_menu.xml" value="0.33" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/mipmap-anydpi-v26/ic_lotto_logo.xml" value="0.21197916666666666" />
+        <entry key="..\:/DWProject/LottoPick/app/src/main/res/mipmap-anydpi-v26/lottoLogo.xml" value="0.1259259259259259" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topNavDp"
+        android:background="#e9f7d3"
+        android:layout_alignParentTop="true"
+        android:elevation="3dp"
+        android:visibility="gone"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:id="@+id/ivToolbarIcon"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                />
+            <TextView
+                android:id="@+id/tvToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintLeft_toRightOf="@+id/ivToolbarIcon"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#E8C01E"
+                android:text="LOTTOPICK"
+                android:gravity="center_vertical"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <FrameLayout
+        android:id="@+id/FLMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/bottomNavDp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomNavDp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/mainBackground"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:id="@+id/btnQr"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/background_main_qr"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btnMain" />
+
+        <Button
+            android:id="@+id/btnMain"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/backgroud_main_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnCheck"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/background_main_my"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/btnMain" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/flLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainBackground"
+        android:visibility="visible"
+        >
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/lotto_loding" />
+        <TextView
+            android:id="@+id/tvRound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"
+            android:text="1회차.."
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="로또 번호를 고르는중 입니다.... \n 처음 실행시 시간이 걸립니다.."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </FrameLayout>
+</RelativeLayout>
